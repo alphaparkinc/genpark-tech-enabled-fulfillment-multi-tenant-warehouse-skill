@@ -1,0 +1,41 @@
+{
+  "name": "genpark-tech-enabled-fulfillment-multi-tenant-warehouse-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Tech-enabled multi-tenant on-demand warehousing and flexible pay-as-you-store fulfillment orchestrator across emerging markets.",
+  "author": "genpark",
+  "category": "logistics",
+  "tags": [
+    "fulfillment-warehouse",
+    "multi-tenant-3pl",
+    "on-demand-storage",
+    "last-mile-sla",
+    "flextock"
+  ],
+  "inputs": {
+    "merchant_id": {
+      "type": "string"
+    },
+    "pallet_count_needed": {
+      "type": "integer"
+    },
+    "market_region": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "allocation_id": {
+      "type": "string"
+    },
+    "warehouse_location": {
+      "type": "string"
+    },
+    "flexible_pay_as_you_store_rate_monthly_usd": {
+      "type": "number"
+    },
+    "same_day_dispatch_sla_pct": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
